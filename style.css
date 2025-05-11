@@ -34,11 +34,15 @@ body {
     font-family: "Ubuntu", serif;
 }
 
+#btn:hover {
+    background-color: #d8c4db;  
+}
+
 #results {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 왼쪽 정렬 */
+    align-items: flex-start; 
     width: 100%;
     text-align: left;
     box-sizing: border-box;
@@ -145,7 +149,7 @@ h1 {
 
 .row {
     display: flex;
-    gap: 20px; /* spacing between boxes */
+    gap: 20px; 
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -161,9 +165,9 @@ h1 {
     font-weight: bold;
     height: 200px;
     border-radius: 15px;
-    flex: 0 0 200px; /* ensures each box takes up 200px width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ìŒì˜ íš¨ê³¼ */
-    perspective: 1000px; /* 3D íš¨ê³¼ */
+    flex: 0 0 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    perspective: 1000px; 
     cursor: pointer;
     transition: transform 0.6s;
 }
@@ -174,7 +178,7 @@ h1 {
 }
 
 .box1-card-front {
-    background-color: #d1e0e1; /* box1ì˜ ì•žë©´ ìƒ‰ìƒ */
+    background-color: #d1e0e1;
     position: absolute;
     top: 0;
     left: 0;
@@ -185,12 +189,12 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden;
 }
 
 .box1-card-back {
-    background-color: #eeedec; /* box1ì˜ ë’·ë©´ ìƒ‰ìƒ */
-    transform: rotateY(180deg); /* ì¹´ë“œê°€ ë’¤ì§‘ížˆë©´ ë³´ì´ëŠ” ë’·ë©´ */
+    background-color: #eeedec; 
+    transform: rotateY(180deg); 
     position: absolute;
     top: 0;
     left: 0;
@@ -202,7 +206,7 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden; 
 }
 
 
@@ -214,9 +218,9 @@ h1 {
     font-weight: bold;
     height: 200px;
     border-radius: 15px;
-    flex: 0 0 200px; /* ensures each box takes up 200px width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ìŒì˜ íš¨ê³¼ */
-    perspective: 1000px; /* 3D íš¨ê³¼ */
+    flex: 0 0 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    perspective: 1000px;
     cursor: pointer;
     transition: transform 0.6s;
 }
@@ -226,7 +230,7 @@ h1 {
 }
 
 .box2-card-front {
-    background-color: #d1d8e1; /* box1ì˜ ì•žë©´ ìƒ‰ìƒ */
+    background-color: #d1d8e1; 
     position: absolute;
     top: 0;
     left: 0;
@@ -237,12 +241,12 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden;
 }
 
 .box2-card-back {
-    background-color: #eeedec; /* box1ì˜ ë’·ë©´ ìƒ‰ìƒ */
-    transform: rotateY(180deg); /* ì¹´ë“œê°€ ë’¤ì§‘ížˆë©´ ë³´ì´ëŠ” ë’·ë©´ */
+    background-color: #eeedec; 
+    transform: rotateY(180deg); 
     position: absolute;
     top: 0;
     left: 0;
@@ -254,7 +258,7 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden; 
 }
 
 
@@ -266,9 +270,9 @@ h1 {
     font-weight: bold;
     height: 200px; 
     border-radius: 15px;
-    flex: 0 0 200px; /* ensures each box takes up 200px width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ìŒì˜ íš¨ê³¼ */
-    perspective: 1000px; /* 3D íš¨ê³¼ */
+    flex: 0 0 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    perspective: 1000px;
     cursor: pointer;
     transition: transform 0.6s;
 }
@@ -278,7 +282,7 @@ h1 {
 }
 
 .box3-card-front {
-    background-color: #e7dbda; /* box3ì˜ ì•žë©´ ìƒ‰ìƒ */
+    background-color: #e7dbda; 
     position: absolute;
     top: 0;
     left: 0;
@@ -289,12 +293,12 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden; 
 }
 
 .box3-card-back {
-    background-color: #eeedec; /* box3ì˜ ë’·ë©´ ìƒ‰ìƒ */
-    transform: rotateY(180deg); /* ì¹´ë“œê°€ ë’¤ì§‘ížˆë©´ ë³´ì´ëŠ” ë’·ë©´ */
+    background-color: #eeedec; 
+    transform: rotateY(180deg); 
     position: absolute;
     top: 0;
     left: 0;
@@ -306,7 +310,7 @@ h1 {
     justify-content: center;
     font-weight: bold;
     border-radius: 15px;
-    backface-visibility: hidden; /* ë°˜ëŒ€ìª½ì´ ë³´ì´ì§€ ì•Šë„ë¡ ì„¤ì • */
+    backface-visibility: hidden; 
 }
 
 .textbox-1 {
@@ -325,7 +329,7 @@ h1 {
     border-top: 2px solid #d1e0e1;
     border-bottom: 2px solid #d1e0e1;
     box-sizing: border-box;
-    flex-shrink: 0; /* í™•ìž¥ë˜ë„ë¡ í•˜ê¸° ìœ„í•´ flex-shrink ì„¤ì • */
+    flex-shrink: 0; 
 }
 
 .textbox-2 {
@@ -344,7 +348,7 @@ h1 {
     border-top: 2px solid #d1d8e1;
     border-bottom: 2px solid #d1d8e1;
     box-sizing: border-box;
-    flex-shrink: 0; /* í™•ìž¥ë˜ë„ë¡ í•˜ê¸° ìœ„í•´ flex-shrink ì„¤ì • */
+    flex-shrink: 0; 
 }
 
 .textbox-2-1 {
@@ -368,7 +372,7 @@ h1 {
 
 .margin-left {
     margin-left: -20px; 
-    width: 680px; /* ìˆ˜ì •ëœ ê°’: ë„ˆë¹„ë¥¼ 3ë°°ë¡œ ì„¤ì • */
+    width: 680px; 
 }
 
 .textbox-3 {
@@ -383,11 +387,11 @@ h1 {
     color: #c8b4be;
     text-align: center;
     height: 200px;
-    width: 1280px;  /* ìˆ˜ì •ëœ ê°’: ë„ˆë¹„ë¥¼ 3ë°°ë¡œ ì„¤ì • */
+    width: 1280px;  
     border-top: 2px solid #e7dbda;
     border-bottom: 2px solid #e7dbda;
     box-sizing: border-box;
-    flex-shrink: 0; /* í™•ìž¥ë˜ë„ë¡ í•˜ê¸° ìœ„í•´ flex-shrink ì„¤ì • */
+    flex-shrink: 0; 
 }
 
 
@@ -440,4 +444,42 @@ h1 {
     height: 1.5px;
     width: 100%;
     background-color: #000000;
+}
+
+.home-button-container {
+    text-align: center;  
+    margin-top: 20px; 
+    margin-bottom: 20px;  
+}
+
+#home-btn {
+    background-color: #cccccc;
+    border: none;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; 
+    box-sizing: border-box; 
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+}
+
+#home-btn:hover {
+    background-color: #d8c4db;  
+}
+
+
+.period-filter {
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+    font-size: 14px;
+}
+
+.period-filter select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-family: "Ubuntu", serif;
+    font-size: 14px;
 }

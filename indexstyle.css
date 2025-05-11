@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     font-family: "Ubuntu", sans-serif;
     font-size: 18px;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 
 .header {
@@ -37,7 +37,7 @@ body {
     display: flex;
     height: 1.5px;
     width: 100%;
-    background-color: #000000;
+    background-color: #282828;
 }
 
 .first-row {
@@ -67,16 +67,16 @@ body {
     font-weight: 400;
     font-size: 50px;
     font-style: normal;
-    color: #000000;
+    color: #282828;
     line-height: 0.7;
 }
 
 .english {
     font-family: "Glook", serif;
-    font-weight: 700;
+    font-weight: 550;
     font-size: 40px;
     font-style: normal;
-    color: #000000;
+    color: #282828;
     white-space: nowrap; 
 }
 
@@ -88,15 +88,15 @@ body {
     justify-content: center;
     padding: 30px;
     box-sizing: border-box;
-    background-color: #d4d3cf;
+    background-color: #eceae5;
 }
 
 .second-row-title {
     font-family: "Glook", serif;
-    font-weight: 700;
+    font-weight: 550;
     font-size: 30px;
     font-style: normal;
-    color: #151413;
+    color: #282828;
     line-height: 2;
 }
 .second-row-text {
@@ -104,7 +104,7 @@ body {
     font-weight: 350; 
     font-style: normal; 
     font-size: 16px; 
-    color: #151413; 
+    color: #282828; 
     line-height:1.5;
 }
 

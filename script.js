@@ -1,28 +1,37 @@
 // SheetDB API URL
-const sheetAPI = 'https://sheetdb.io/api/v1/f50avh96ekym2';
-
-// 검색 결과를 표시할 섹션
+const sheetAPI = 'https://sheetdb.io/api/v1/1b245b51zxbs8';
 const section = document.querySelector('#results');
+let curentPage = 1;
+const itemsPerPage = 5;
 
-// 검색 버튼 클릭 시 실행되는 함수
+// Add event listener to the button to perform search function
 document.querySelector('#btn').addEventListener('click', async () => {
-  const keyword = document.querySelector('#search').value.trim().toLowerCase(); // 검색어 입력
+  const keyword = document.querySelector('#search').value.trim();
+  const selectedPeriod = document.querySelector('#periodSelect').value;
+  
 
+  // If keyword is empty, show a message
   if (!keyword) {
     section.innerHTML = `<p>Please Enter Keyword!</p>`;
-    return;
+    return;  
   }
 
   try {
-    // SheetDB API에서 데이터 가져오기
+    // Fetch data from the Sheet DB API
     const res = await fetch(sheetAPI);
     const data = await res.json();
 
-    // 검색어가 Content에 포함된 항목 필터링 + 하이라이트 추가
+    // Filter the keyword from the API data
     const results = data.filter(chapter => {
       const content = chapter.Content || '';
-      if (content.toLowerCase().includes(keyword)) {
-        // 하이라이트 처리: 검색어를 <span>으로 감싸기
+      const period = chapter['Period'] || '';
+
+      const periodMatch = selectedPeriod ? period === selectedPeriod : true;
+
+      const keywordMatch = content.includes(keyword);
+
+      if (periodMatch && keywordMatch) {
+        // Highlight the keyword in the content using HTML span
         chapter.HighlightedContent = content.replace(
           new RegExp(`(${keyword})`, 'gi'),
           `<span class="highlight">$1</span>`
@@ -32,7 +41,7 @@ document.querySelector('#btn').addEventListener('click', async () => {
       return false;
     });
 
-    // 결과 출력
+    // Retrieve Results in the format of [Book Title] : Chapter Title
     if (results.length > 0) {
         section.innerHTML = `
           <h1>Search Results for "${keyword}"</h1>
@@ -58,15 +67,20 @@ document.querySelector('#btn').addEventListener('click', async () => {
 });
 
 
-function flipCard(box) {
-    box.classList.toggle('flipped'); 
-}    
-
+// Add event listener to the search input to perform search function on Enter key
 document.querySelector('#search').addEventListener('keyup', function(event) {
   if (event.key === 'Enter') {
     document.querySelector('#btn').click();
   }
 });
 
+// Add function to open PDF file
+function openPDF(pdfName) {
+  window.open(pdfName, '_blank');
+}
 
+// Add event listener to perform period select when the button is clicked
+document.querySelector('#periodSelect').addEventListener('change', () => {
+  document.querySelector('#btn').click();
+});
 

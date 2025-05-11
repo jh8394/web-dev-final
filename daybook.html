@@ -14,12 +14,12 @@
                 <div class="subtitle">Explore excavated manuscripts with hemerological texts determining auspicious days for daily activities in Early China</div>
                 <div></div>
                 <div>
-                    <input type="text" id="search" placeholder="Enter Keyword">
-                    <button id="btn">Search</button>
+                    <input type="text" id="search" placeholder="Please Enter Keyword">
+                    <button id="btn">Search</button><br>
                 </div>
             </div>
             <div class="row font">
-                <div class="box1" onclick="flipCard(this)">
+                <div class="box1">
                     <div class="card-inner">
                         <div class="box1-card-front"><img src=jiudian.jpg width=100px></div>
                         <div class="box1-card-back">Jiudian 九店<br>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box1" onclick="flipCard(this)">
+                <div class="box1" onclick="openPDF('fangmatan.pdf')">
                     <div class="card-inner">
                         <div class="box1-card-front"><img src=fangmatan.jpg width=100px></div>
                         <div class="box1-card-back">Fangmatan 放馬灘<br>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box1" onclick="flipCard(this)">
+                <div class="box1">
                     <div class="card-inner">
                         <div class="box1-card-front"><img src=wangjiatai.jpg width=100px></div>
                         <div class="box1-card-back">Wangjiatai 王家台<br>
@@ -51,7 +51,7 @@
             </div>
             <div class="row font">
                 <div class="textbox-2">Qin</div>
-                <div class="box2" onclick="flipCard(this)">
+                <div class="box2" onclick="openPDF('shuihudi.pdf')">
                     <div class="card-inner">
                         <div class="box2-card-front"><img src=shuihudi.jpg width=100px height=150px></div>
                         <div class="box2-card-back">Shuihudi 睡虎地<br>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box2" onclick="flipCard(this)">
+                <div class="box2" onclick="openPDF('zhoujiatai.pdf')">
                     <div class="card-inner">
                         <div class="box2-card-front"><img src=zhoujiatai.jpg width=120px height=160px></div>
                         <div class="box2-card-back">Zhoujiatai 周家台<br>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box2" onclick="flipCard(this)">
+                <div class="box2" onclick="openPDF('yueshan.pdf')">
                     <div class="card-inner">
                         <div class="box2-card-front"><img src=yueshan.jpg width=150px></div>
                         <div class="box2-card-back">Yueshan 岳山<br>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box2" onclick="flipCard(this)">
+                <div class="box2">
                     <div class="card-inner">
                         <div class="box2-card-front"><img src=beida.jpg width=170px></div>
                         <div class="box2-card-back">Peking Univ 北京大學<br>
@@ -92,7 +92,7 @@
             </div>
             <div class="row font">
                 <div class="textbox-3">Han Dynasty</div>
-                <div class="box3" onclick="flipCard(this)">
+                <div class="box3" onclick="openPDF('kongjiapo.pdf')">
                     <div class="card-inner">
                         <div class="box3-card-front"><img src=kongjiapo.jpg width=100px></div>
                         <div class="box3-card-back">Kongjiapo 孔家坡<br>
@@ -101,25 +101,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="box3" onclick="flipCard(this)">
-                    <div class="card-inner">
-                        <div class="box3-card-front"><img src=huxishan.jpg width=120px></div>
-                        <div class="box3-card-back">Huxishan 虎溪山<br>
-                            <span class="small-font">Year of Excavation: <br>1999</span>
-                            <span class="small-font"> Place of Origin: <br>Yuanling, Hunan</span>
+                <div class="box3">
+                    <div class="card-inner" onclick="openPDF('yinwan.pdf')">
+                        <div class="box3-card-front"><img src=yinwan.jpg width=120px></div>
+                        <div class="box3-card-back">Yinwan 尹灣<br>
+                            <span class="small-font">Year of Excavation: <br>1993</span>
+                            <span class="small-font"> Place of Origin: <br>Lianyunqiang, Jiangsu</span>
                         </div>
                     </div>
                 </div>
-                <div class="box3" onclick="flipCard(this)">
-                    <div class="card-inner">
-                        <div class="box3-card-front"><img src=zhoujiazhai.jpg width=120px height=160px></div>
-                        <div class="box3-card-back">Zhoujiazhai 周家寨<br>
-                            <span class="small-font">Year of Excavation: <br>2014</span>
-                            <span class="small-font"> Place of Origin: <br>Suizhou, Hubei</span>
+                <div class="box3">
+                    <div class="card-inner" onclick="openPDF('wuwei.pdf')">
+                        <div class="box3-card-front"><img src=wuwei.jpg width=120px height=160px></div>
+                        <div class="box3-card-back">Wuwei 武威<br>
+                            <span class="small-font">Year of Excavation: <br>1957</span>
+                            <span class="small-font"> Place of Origin: <br>Wuwei, Gansu</span>
                         </div>
                     </div>
                 </div>
-                <div class="box3" onclick="flipCard(this)">
+                <div class="box3">
                     <div class="card-inner">
                         <div class="box3-card-front"><img src=xuanquan.jpg width=120px height=160px></div>
                         <div class="box3-card-back">Xuanquan 懸泉  <br>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box3" onclick="flipCard(this)">
+                <div class="box3">
                     <div class="card-inner">
                         <div class="box3-card-front"><img src=juyan.jpg width=120px height=160px></div>
                         <div class="box3-card-back">Juyan 居延<br>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box3" onclick="flipCard(this)">
+                <div class="box3">
                     <div class="card-inner">
                         <div class="box3-card-front"><img src=shuiquanzi.jpg width=120px height=160px></div>
                         <div class="box3-card-back">Shuiquanzi 水泉子<br>
@@ -149,6 +149,20 @@
             </div>
             <div class="fourth-row">
                 <section id="results"></section>
+                <div class="period-filter">
+                    <label for="periodSelect">Filter by Period:</label>
+                    <select id="periodSelect">
+                      <option value="">All Periods</option>
+                      <option value="Warring States">Warring States</option>
+                      <option value="Qin">Qin</option>
+                      <option value="Han">Han</option>
+                    </select>
+                </div>
+                <div class="home-button-container">
+                    <button id="home-btn" onclick="window.location.href='index.html'">Back to HOME</button>
+                    <button id="home-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Back to TOP</button>
+                </div>
+
             </div>
         </div>
         <script src="script.js" defer></script>
